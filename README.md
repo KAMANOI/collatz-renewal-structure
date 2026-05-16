@@ -51,6 +51,7 @@ These results hold unconditionally, independent of any conjecture about orbit be
 ```
 collatz-renewal-structure/
 ├── paper/
+│   ├── collatz_paper_a_final.pdf — final version
 │   ├── Paper_A_arxiv_final.tex   — LaTeX source
 │   ├── Paper_A_arxiv_final.pdf   — compiled draft
 │   └── references.bib            — bibliography
@@ -62,7 +63,9 @@ collatz-renewal-structure/
 
 ## Paper
 
-[**Paper PDF**](paper/Paper_A_arxiv_final.pdf)
+[**Paper PDF (final)**](paper/collatz_paper_a_final.pdf)
+
+[**Paper PDF (arXiv draft)**](paper/Paper_A_arxiv_final.pdf)
 
 LaTeX source: [`paper/Paper_A_arxiv_final.tex`](paper/Paper_A_arxiv_final.tex)
 

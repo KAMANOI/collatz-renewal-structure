@@ -1,46 +1,50 @@
 # Exact Renewal Structure in Accelerated Collatz Dynamics
 
-### A 2-adic Symbolic Model and Exact Operator Theory
+**Hiroki Kamanoi**  
+Draft — 2026
 
----
+Paper A in a series on Collatz dynamics through finite Markov chain theory.
 
 ## Overview
 
-This repository contains working papers and supporting material related to a symbolic and operator-theoretic approach to induced Collatz dynamics.
+This repository contains the paper and supporting material for a symbolic and operator-theoretic approach to induced Collatz dynamics.
 
-The main paper develops:
+The paper develops:
 
-- an exact countable-state renewal system,
-- a shift-and-kill operator identity,
-- exact covariance and entropy formulas,
+- an exact countable-state renewal system;
+- a shift-and-kill operator identity;
+- exact covariance and entropy formulas;
 - a 2-adic symbolic realization.
 
 **The project does NOT claim a proof of the Collatz conjecture.**
 
-Instead, the focus is the exact symbolic and operator structure associated with the induced Type A dynamics — the subsequence of odd iterates under the accelerated Collatz map.
-
----
+The focus is the exact symbolic and operator structure associated with the induced Type A dynamics — the subsequence of odd iterates under the accelerated Collatz map.
 
 ## Main Result
 
 The central operator identity is:
 
-```
-P^N f = S^N f
-```
+$$P^N f = S^N f$$
 
 on the mean-zero subspace of the renewal system.
 
 This identity yields explicit formulas for:
 
-- covariance decay,
-- spectral contraction,
-- entropy,
+- covariance decay;
+- spectral contraction;
+- entropy;
 - mutual information memory.
 
 These results hold unconditionally, independent of any conjecture about orbit behavior.
 
----
+## Logical Structure of the Series
+
+| Paper | Core result | Status |
+|-------|-------------|--------|
+| **A (this paper)** | Exact operator structure and renewal systems | Proved |
+| B | Exact TV mixing: $T_\mathrm{mix}(K) = K-1$ | Proved |
+| C | One-bit spectral jump $\delta_{K,1} \approx 0.29$; Open Gap Problem | Numerical / Open |
+| D | Simultaneous scale coherence; conditional diverging mixing | Open / Conditional |
 
 ## Repository Structure
 
@@ -48,47 +52,25 @@ These results hold unconditionally, independent of any conjecture about orbit be
 collatz-renewal-structure/
 ├── paper/
 │   ├── Paper_A_arxiv_final.tex   — LaTeX source
-│   ├── Paper_A_arxiv_final.pdf   — Compiled PDF
-│   └── references.bib            — Bibliography
-├── figures/                      — Figures and diagrams (forthcoming)
+│   ├── Paper_A_arxiv_final.pdf   — compiled draft
+│   └── references.bib            — bibliography
+├── figures/                      — figures and diagrams
 ├── notes/
-│   └── roadmap.md                — Research scope and future directions
-└── src/                          — Supporting code (forthcoming)
+│   └── roadmap.md                — research scope and future directions
+└── src/                          — supporting code
 ```
-
----
 
 ## Paper
 
 [**Paper PDF**](paper/Paper_A_arxiv_final.pdf)
 
-The LaTeX source is available at [`paper/Paper_A_arxiv_final.tex`](paper/Paper_A_arxiv_final.tex).
+LaTeX source: [`paper/Paper_A_arxiv_final.tex`](paper/Paper_A_arxiv_final.tex)
 
----
+## Suggested arXiv Categories
 
-## Mathematical Context
-
-The paper works within the following framework:
-
-- **Renewal systems** (Krieger, symbolic dynamics)
-- **Countable-state Markov shifts** (Sarig, thermodynamic formalism)
-- **Operator theory on function spaces** (shift and kill operators)
-- **2-adic symbolic realization** (exact coding of Type A trajectories)
-
-The induced Type A map — iterating only the odd-output steps of the accelerated Collatz map — admits an exact renewal structure. This structure is the central object of study.
-
----
-
-## Status
-
-> **Status: working mathematical draft.**
-
-The paper is currently being refined for public mathematical discussion and possible arXiv submission.
-
-Feedback and comments are welcome via GitHub Issues.
-
----
+Primary: `math.DS`  
+Secondary: `math.NT`, `math.PR`
 
 ## License
 
-MIT License. See [LICENSE](LICENSE).
+MIT License
